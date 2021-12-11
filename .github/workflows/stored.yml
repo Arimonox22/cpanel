@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
              npm i express -save
-             chmod 755 ./server.js
+             chmod 755 ./sever.js
