@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm i express -save
-      - uses: Run Server
-      - run: ./server.js
+      - run: |
+             npm i express -save
+            ./server.js
