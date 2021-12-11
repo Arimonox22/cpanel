@@ -14,4 +14,3 @@ jobs:
       - run: |
              npm i express -save
              chmod 755 ./server.js
-             node ./server.js
