@@ -14,4 +14,4 @@ jobs:
       - run: |
              npm i express -save
              npm i  child_process
-             chmod 755 ./public/server.js
+             chmod 755 ./panel/server.js
