@@ -1,3 +1,3 @@
 const { spawn , exec } = require('child_process');
 
-exec( 'ls' )
+exec('mkdir prevHash')
