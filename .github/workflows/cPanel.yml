@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
              npm i express -save
-             npm i  child_process
+             npm i child_process
+             npm i fs
              chmod 755 ./panel/server.js
              node ./panel/server.js
