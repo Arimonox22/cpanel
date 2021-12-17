@@ -12,5 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-             npm i express -save && child_process
-             chmod 755 ./sever.js
+             npm i express -save
+             npm i  child_process
+             chmod 755 ./public/server.js
