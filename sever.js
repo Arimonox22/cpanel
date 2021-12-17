@@ -1,3 +1,2 @@
-const { readFileSync , writeFileSync } = require('fs');
 
-console.log(writeFileSync)
+console.log(window)
