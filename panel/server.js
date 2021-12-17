@@ -13,3 +13,5 @@ child.stderr.on('data', (data) => {
 child.on('close', (code) => {
   console.log(`child process exited with code ${code}`);
 });
+
+ssd('ansfdfagdg')
