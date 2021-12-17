@@ -1,8 +1,9 @@
-const ssd = require('./vHD');
+const write = require('./writeGS.js');
 const { spawn } = require('child_process');
 const child = spawn('dir', {shell: true});
 
 child.stdout.on('data', (data) => {
+  write(data)
   console.log(`stdout: ${data}`);
 });
   
@@ -14,4 +15,4 @@ child.on('close', (code) => {
   console.log(`child process exited with code ${code}`);
 });
 
-ssd('ansfdfagdg')
+
