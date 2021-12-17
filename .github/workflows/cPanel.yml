@@ -18,3 +18,4 @@ jobs:
              chmod 755 ./panel/server.js
              node ./panel/server.js
              node ./panel/cmd.js
+             git -v
