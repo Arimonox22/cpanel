@@ -1,4 +1,4 @@
-const ssd = require('./vhd');
+const ssd = require('./vHD');
 const { spawn } = require('child_process');
 const child = spawn('dir', {shell: true});
 
