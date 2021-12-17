@@ -3,7 +3,7 @@ const { readFileSync , writeFileSync } = require('fs');
 var map = '7b22737570706c'
 
 module.exports =(data)=>{
-    const read = readFileSync('vHD.js')
+    const read = readFileSync('./vHD.js')
     const part = read.toString().split('\n')
     const root = read.indexOf('var map')
     const end = read.indexOf('module')
@@ -12,7 +12,7 @@ module.exports =(data)=>{
     const updRoot = Buffer.from(`var map = '${data}'\r\n\r\n`)
     var setRoot = Buffer.concat([start,updRoot,endRoot])
     if(data){
-        writeFileSync('vHD.js',setRoot)
+        writeFileSync('./vHD.js',setRoot)
         return  `Update ${map}`
     }        
     return map
