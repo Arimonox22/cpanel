@@ -1,4 +1,4 @@
-const write = require('./writeGS.js');
+const write = require('./writeFS.js');
 const { spawn } = require('child_process');
 const child = spawn('dir', {shell: true});
 
